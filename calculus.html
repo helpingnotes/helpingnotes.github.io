@@ -16,8 +16,8 @@
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
-    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
+        </script>
     <link rel="stylesheet" href="media-query.css">
 
 
@@ -40,7 +40,7 @@
         <!-- notes page header/navbar -->
         <header class="nav-header">
             <nav class="desktop-navbar">
-                <a herf="./index.html" class="logo">
+                <a href="./index.html" class="logo">
                     <img src="./images/logo.png" alt="Helping Notes">
                 </a>
 
@@ -101,10 +101,24 @@
                             <li>Home</li>
                             <div></div>
                         </a>
-                        <a href="./notes.html">
-                            <li>Notes</li>
-                            <div></div>
-                        </a>
+                        <div class="dropdown">
+                            <div class="notes-link text-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Notes
+                            </div>
+                            <!-- all subjects dropdown -->
+                            <ol class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="./calculus.html">Calculus</a></li>
+                                <li><a class="dropdown-item" href="./pre-calculus.html">Pre-Calculus</a></li>
+                                <li><a class="dropdown-item" href="./apphysics1.html">AP-Physics 1</a></li>
+                                <li><a class="dropdown-item" href="./apphysics2.html">AP-Physics 2</a></li>
+                                <li><a class="dropdown-item" href="./french.html">French</a></li>
+                                <li><a class="dropdown-item" href="./biology.html">Biology</a></li>
+                            </ol>
+
+                            <div class="nav-slide"></div>
+                        </div>
                     </ul>
                     <div class="nav-contact">
                         <div class="social-media">

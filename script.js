@@ -5,7 +5,7 @@ var myState = {
     zoom: 1
 }
 const changeChap = (chap_url) => {
-    pdfjsLib.getDocument(chap_url).then((pdf) => {
+    pdfjsLib.getDocument(chap_url, {mode:'no-cors'}).then((pdf) => {
 
         myState.pdf = pdf;
         myState.totalPages = pdf._pdfInfo.numPages;
@@ -14,6 +14,7 @@ const changeChap = (chap_url) => {
 
     });
 }
+
 function render() {
     myState.pdf.getPage(myState.currentPage).then((page) => {
 
@@ -96,19 +97,20 @@ function download_mobile_note() {
         downloadFile(filename, content);
     }
 }
-window.addEventListener("resize", ()=>{
-    if (window.outerWidth < 999) {
-        myState.zoom = (window.outerWidth/1000) + .2
-        console.log(myState.zoom);
-        render()
-    }
-    else{
-        myState.zoom = 1
-        console.log(myState.zoom);
-        render()
-    }
-})
-window.addEventListener("onload", ()=>{
+// window.addEventListener("resize", ()=>{
+//     if (window.outerWidth < 999) {
+//         myState.zoom = (window.outerWidth/1000) + .2
+//         console.log(myState.zoom);
+//         render()
+//     }
+//     else{
+//         myState.zoom = 1
+//         console.log(myState.zoom);
+//         render()
+//     }
+// })
+window.addEventListener("load", ()=>{
+    console.log(window.outerWidth);
     if (window.outerWidth < 999) {
         myState.zoom = (window.outerWidth/1000) + .2
         console.log(myState.zoom);
