@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helping Notes</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
+    </script>
+    <link rel="stylesheet" href="media-query.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="NotesSubBody">
+
+        <div class="side-back" style="background-image: url('./images/back.jpg');">
+        </div>
+        <header class="nav-header">
+            <nav class="desktop-navbar">
+                <a href="./index.html" class="logo">
+                    <img src="./images/logo.png" alt="Helping Notes">
+                </a>
+
+                <ul class="nav-content">
+                    <a href="./index.html">
+                        <li>Home</li>
+                        <div class="nav-slide"></div>
+                    </a>
+                    <div class="dropdown">
+                        <div class="notes-link text-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Notes
+                        </div>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="./calculus.html">Calculus</a></li>
+                            <li><a class="dropdown-item" href="./pre-calculus.html">Pre-Calculus</a></li>
+                            <li><a class="dropdown-item" href="./apphysics1.html">AP-Physics 1</a></li>
+                            <li><a class="dropdown-item" href="./apphysics2.html">AP-Physics 2</a></li>
+                            <li><a class="dropdown-item" href="./french.html">French</a></li>
+                            <li><a class="dropdown-item" href="./biology.html">Biology</a></li>
+                        </ul>
+
+                        <div class="nav-slide"></div>
+                    </div>
+                </ul>
+                <div class="nav-contact">
+                    <div class="social-media">
+                        <a href="https://wa.me/+17325208465" target="_blank" class="social-1"><img
+                                src="./images/whatsapp.png" alt="whatsapp"></a>
+                        <a href="instaid" target="_blank" class="social-2"><img
+                                src="./images/instagram.png" alt=""></a>
+
+                    </div>
+                    <div class="contact-us">
+                        <a href="./contact.html">
+                            <div class="contact-slide"></div>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                Contact Us
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!--Phone navbar-->
+                <div class="navbar-hamburger mobile-bar-open" onclick="open_navbar();"><img src="./images/hamburger.png"
+                        alt=""></div>
+                <nav class="mobile-navbar">
+                    <div class="navbar-hamburger mobile-bar-close" onclick="close_navbar();"><img
+                            src="./images/cross.png" alt=""></div>
+                    <ul>
+                        <a href="./index.html" class="nav-active">
+                            <li>Home</li>
+                            <div></div>
+                        </a>
+                        <div class="dropdown">
+                            <div class="notes-link text-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Notes
+                            </div>
+                            <!-- all subjects dropdown -->
+                            <ol class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="./calculus.html">Calculus</a></li>
+                                <li><a class="dropdown-item" href="./pre-calculus.html">Pre-Calculus</a></li>
+                                <li><a class="dropdown-item" href="./apphysics1.html">AP-Physics 1</a></li>
+                                <li><a class="dropdown-item" href="./apphysics2.html">AP-Physics 2</a></li>
+                                <li><a class="dropdown-item" href="./french.html">French</a></li>
+                                <li><a class="dropdown-item" href="./biology.html">Biology</a></li>
+                            </ol>
+
+                            <div class="nav-slide"></div>
+                        </div>
+                    </ul>
+                    <div class="nav-contact">
+                        <div class="social-media">
+                            <a href="https://wa.me/+17325208465" target="_blank" class="social-1"><img
+                                    src="./images/whatsapp.png" alt="whatsapp"></a>
+                            <a href="instaid" target="_blank" class="social-2"><img
+                                    src="./images/instagram.png" alt=""></a>
+    
+                        </div>
+                        <div class="contact-us">
+                            <a href="./contact.html">
+                                <div class="contact-slide"></div>
+                                <i class="fa-solid fa-phone"></i>
+                                <span>
+                                    Contact Us
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </nav>
+            </nav>
+        </header>
+        <main class="notes-content">
+
+            <aside class="aside-chapters front-hide">
+                <div class="chapter-hamburger" onclick="show_chapters();">
+                    <img src="./images/hamburger.png" alt="">
+                </div>
+                <div class="chapters">
+
+                    <header>
+                        <h1>Chapters</h1>
+                    </header>
+                    <ul id="chapters-list">
+                    </ul>
+
+                </div>
+            </aside>
+            <main class="pdf-notes-content">
+                <main class="pdf-content front-hide">
+                    <div class="pageNo">
+                        1/22
+                    </div>
+                    <div class="zoom-options">
+                        <div><img class="zoom-out" src="./images/minus.png" alt=""></div>
+                        <div class="pageSize">100%</div>
+                        <div><img class="zoom-in" src="./images/plus.png" alt=""></div>
+                    </div>
+                    <div id="canvas-container">
+                        <canvas id="pdf-render">
+                            <!-- <iframe src="./images/example.pdf" height="820" width="600">jjkk</iframe> -->
+                        </canvas>
+                    </div>
+                    <div class="pdf-options">
+                        <a href="./images/example.pdf" download>
+                            <img class="download" src="./images/download (2).png" alt="">
+                        </a>
+                        <a href="./images/example.pdf#page=2">
+                            <img class="full-screen" src="./images/full-screen.png" alt="">
+                        </a>
+                        <div>
+                            <img class="next" src="./images/next-arrow.png" alt="">
+                        </div>
+                        <div style="transform: rotate(180deg); display: flex; justify-content: right;">
+                            <img class="prev" src="./images/next-arrow.png" alt="">
+                        </div>
+                    </div>
+                </main>
+                <aside class="sub-name-section front-hide">
+                    <aside class="side-heading">
+                        <h1 class="notes-subname">Biology</h1>
+                        <div class="side-back" style="background-image: url('./images/back.jpg');">
+                        </div>
+                    </aside>
+                    <div style="position:relative;">
+
+                        <div class="notepad-download" onclick="download_note()">
+                            <img src="./images/download (2).png" alt="">
+                        </div>
+                        <textarea style="min-height: 20px; max-height: 500px; max-width: 80%;"
+                            class="writtenNotes notes-section " name="notes" id="notes"
+                            placeholder="Create note..."></textarea>
+                        <div class="author_name">
+                            <p>By: Charls Aurther</p>
+                        </div>
+                    </div>
+                </aside>
+            </main>
+            <div class="mobile-notepad-container">
+
+                <div class="mobile-notepad-download" onclick="download_mobile_note();">
+                    <img src="./images/download (2).png" alt="">
+                </div>
+                <textarea style="min-height: 20px; max-height: 500px; max-width: 80%;"
+                    class="mobile-notepad writtenNotes notes-section" name="notes" id="notes"
+                    placeholder="Create note..."></textarea>
+            </div>
+        </main>
+    </main>
+    <script src="./script.js"></script>
+    <script src="./data.js"></script>
+    <script>
+
+
+        const front_hide = document.querySelectorAll('.front-hide');
+        window.onload = () => {
+            front_hide.forEach(element => {
+                element.style.top = "0"
+                element.style.opacity = "1"
+            });
+            changeChap(subject1.chapterPath.chapter1)
+        }
+        // const data = Object.entries(subject1)
+        // console.log(data.length);
+        for (const [key, value] of Object.entries(subject1.chapterNames)) {
+
+            let chapter_element = document.createElement("li")
+            chapter_element.setAttribute("class", "change-chapters")
+            chapter_element.innerText = value;
+            document.querySelector("#chapters-list").appendChild(chapter_element);
+        }
+
+        let change_chapters = document.querySelectorAll(".change-chapters");
+        change_chapters[0].classList.add("current-chap")
+        var i = 0;
+        for (const [key, value] of Object.entries(subject1.chapterPath)) {
+            change_chapters[i].onclick = function () {
+                changeChap(value);
+                var current = document.querySelector(".current-chap");
+                current.classList.remove("current-chap")
+                this.classList.add("current-chap");
+            }
+            i++;
+        }
+    </script>
+</body>
+
+</html>

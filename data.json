@@ -1,0 +1,84 @@
+{
+"subject1" : {
+    "subjectName": "Calculus",
+    "chapter1": "./images/1.pdf",
+    "chapter2": "./images/2.pdf",
+    "chapter3": "./images/3.pdf",
+    "chapter4": "./images/4.pdf",
+    "chapter5": "./images/5.pdf",
+    "chapter6": "./images/6.pdf",
+    "chapter7": "./images/7.pdf",
+    "chapter8": "./images/8.pdf",
+    "chapter9": "./images/9.pdf",
+    "chapter10": "./images/10.pdf"
+},
+
+"subject2" : {
+    "subjectName": "Pre-Calculus",
+    "chapter1": "./images/1.pdf",
+    "chapter2": "./images/2.pdf",
+    "chapter3": "./images/3.pdf",
+    "chapter4": "./images/4.pdf",
+    "chapter5": "./images/5.pdf",
+    "chapter6": "./images/6.pdf",
+    "chapter7": "./images/7.pdf",
+    "chapter8": "./images/8.pdf",
+    "chapter9": "./images/9.pdf",
+    "chapter10": "./images/10.pdf"
+},
+"subject3" : {
+    "subjectName": "AP-Calculus-1",
+    "chapter1": "./images/1.pdf",
+    "chapter2": "./images/2.pdf",
+    "chapter3": "./images/3.pdf",
+    "chapter4": "./images/4.pdf",
+    "chapter5": "./images/5.pdf",
+    "chapter6": "./images/6.pdf",
+    "chapter7": "./images/7.pdf",
+    "chapter8": "./images/8.pdf",
+    "chapter9": "./images/9.pdf",
+    "chapter10": "./images/10.pdf"
+},
+
+"subject4" : {
+    "subjectName": "AP-Calculus-2",
+    "chapter1": "./images/1.pdf",
+    "chapter2": "./images/2.pdf",
+    "chapter3": "./images/3.pdf",
+    "chapter4": "./images/4.pdf",
+    "chapter5": "./images/5.pdf",
+    "chapter6": "./images/6.pdf",
+    "chapter7": "./images/7.pdf",
+    "chapter8": "./images/8.pdf",
+    "chapter9": "./images/9.pdf",
+    "chapter10": "./images/10.pdf"
+},
+
+"subject5" : {
+    "subjectName": "French",
+    "chapter1": "./images/1.pdf",
+    "chapter2": "./images/2.pdf",
+    "chapter3": "./images/3.pdf",
+    "chapter4": "./images/4.pdf",
+    "chapter5": "./images/5.pdf",
+    "chapter6": "./images/6.pdf",
+    "chapter7": "./images/7.pdf",
+    "chapter8": "./images/8.pdf",
+    "chapter9": "./images/9.pdf",
+    "chapter10": "./images/10.pdf"
+},
+
+"subject6" : {
+    "subjectName": "Biology",
+    "chapter1": "./images/1.pdf",
+    "chapter2": "./images/2.pdf",
+    "chapter3": "./images/3.pdf",
+    "chapter4": "./images/4.pdf",
+    "chapter5": "./images/5.pdf",
+    "chapter6": "./images/6.pdf",
+    "chapter7": "./images/7.pdf",
+    "chapter8": "./images/8.pdf",
+    "chapter9": "./images/9.pdf",
+    "chapter10": "./images/10.pdf"
+}
+}
