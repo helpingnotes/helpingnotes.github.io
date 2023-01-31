@@ -960,6 +960,7 @@ iron-icon{
     position: relative;
     width: 100%;
     display: none;
+    top: 40px;
 }
 .mobile-notepad-download {
     position: absolute;

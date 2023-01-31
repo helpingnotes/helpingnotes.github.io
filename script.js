@@ -26,10 +26,12 @@ function render() {
         let container = document.getElementById("canvas-container")
         let containerWidth = container.offsetWidth;
         // myState.zoom = containerWidth;
-        var viewport =(page.getViewport(containerWidth/page.getViewport(1).width));
+        // var viewport =(page.getViewport(containerWidth/page.getViewport(myState.zoom).width));
+        var viewport =(page.getViewport(10));
         console.log( viewport);
         canvas.width = viewport.width;
         canvas.height = viewport.height;
+        canvas.style.width = "100%"
 
         page.render({
             canvasContext: ctx,
