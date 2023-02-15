@@ -1,0 +1,298 @@
+@media screen and (max-width:1576px) {
+
+    .footer-background {
+        background: url(./images/footer-background.png)right center no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 300px;
+        left: 0;
+        position: absolute;
+        opacity: .2;
+        top: 93%;
+
+    }
+
+    .contact-footer-background {
+        background: url(./images/footer-background.png)right center no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 300px;
+        left: 0;
+        position: absolute;
+        opacity: .2;
+    }
+
+    .side-section h1 {
+        font-size: 2.4rem;
+    }
+
+    .side-section .subject li {
+        font-size: 2.4rem;
+        margin: 14px 0;
+    }
+
+    .side-section ul {
+        height: 30px;
+    }
+
+    @keyframes slide {
+        100% {
+            top: -440px;
+        }
+    }
+
+    .NotesSubBody {
+        width: 100%;
+    }
+
+    .notepad-download {
+        right: 60px;
+        bottom: 57px;
+        
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .chapters {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .chapters {
+        left: -220px;
+        background: black;
+        opacity: 0;
+    }
+
+    .notes-content {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .chapter-hamburger {
+        display: block;
+    }
+    .subjects-cards {
+        grid-template-columns: auto auto;
+    }
+
+}
+@media screen and (max-width:970px) {
+    .subBody{
+        width: 100%;
+    }
+    .nav-contact .contact-us a{
+        padding: 15px 20px;
+    }
+    .contact-content{
+        grid-template-rows:7% 96%;
+        grid-template-columns: auto;
+    }
+    .pdf-notes-content {
+        grid-template-rows: auto auto;
+        grid-template-columns: none;
+
+        
+    }
+    #canvas-container{
+        min-width: 100vw;
+
+    }
+    .contact-content form{
+        left: 0;
+        width: 80%;
+        margin: 100px auto 0 auto;
+    }
+    .nav-header .desktop-navbar .nav-content{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 800px) {
+
+    .nav-contact{
+        display: none;
+    }
+    .mobile-bar-open{
+        display: block;
+    }
+    /* .side-heading {position: relative;
+        z-index: -1;
+    } */
+    .mobile-navbar ul{display: flex !important;}
+    .mobile-navbar .nav-contact{display: flex;}
+    .sub-name-section {
+        grid-template-rows: 75% 35%;
+    }
+
+    .writtenNotes {
+        display: none !important;
+    }
+
+    .notepad-download {
+        display: none;
+    }
+    .mobile-notepad{
+        display: block !important;
+        max-width: 100% !important;
+    }
+    .mobile-notepad-download{
+        display: block !important;
+        right: 12px;
+    }
+    .mobile-notepad-container{
+        display: block;
+    }
+    .footer-follow > ul{
+        display: block;
+    }
+    
+    /* .home-content .side-heading{
+        display: none;
+    } */
+    .side-section{
+        height: 250px;
+    }
+    .sub-home-content{
+        grid-template-columns: 100%;
+    }
+    .message-body h1{
+        font-size:4vw !important;
+    }
+    .message-body a{
+        font-size: 4vw;    
+    }
+}
+@media screen and (max-width:750px) {
+    .card{
+        width: 15rem !important;
+
+    }
+    .continue{
+        right: 66%;
+    }
+    .card::after{
+        width: 115px;
+    }
+    .footer-content{
+        margin-left: 30px;
+        flex-direction: column;
+    }
+    .second-block ul{
+        display: flex;
+        align-items: flex-start;
+    }
+    .second-block ul li{
+        margin: 0 10px;
+
+    }
+    .nav-header .desktop-navbar ul>a{
+        margin: 10px;
+    }
+    .footer-follow > ul{
+        display: flex;
+    }
+    .f-blog-heading{
+        width: 100vw;
+    }
+    .footer-background{
+        background-size: cover;
+    }
+}
+@media screen and (max-width:650px) {
+    .pdf-notes-content {
+        grid-template-columns: 100%;
+    }
+    .side-back{
+        display: none;
+    }
+    .sub-name-section{
+        display: none;
+    }
+    .contact-footer-background{
+        top: 90%;
+        background-size: cover;
+
+    }
+    .pageNo{
+        top: -26px;
+        left: 100px;
+    }
+    .message-body h1{
+        font-size:4.5vw !important;
+    }
+    .message-body a{
+        font-size: 4.5vw;    
+    }
+}
+@media screen and (max-width:500px) {
+    .front-blog{
+        display: block;
+        background: url('./images/front-img.jpg') center center no-repeat;
+        background-size: contain;
+    }
+    .front-blog::before{
+        content: "";
+        background: linear-gradient(-45deg, black, transparent, transparent, black);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    
+    }
+    .front-blog-img{
+        display: none;
+    }
+    .subjects-cards{
+        grid-template-columns: auto;
+    }
+    .card{
+        width: 20rem !important;
+    }
+    .continue{
+        right: 48%;
+    }
+    .first-block .logo .footer-about{
+        width: 85vw;
+    }
+    .second-block ul{
+        flex-wrap: wrap;
+    }
+    .footer-background{
+        top: 95.67%;
+    }
+    .pdf-content {
+        display: block;
+    }
+    .pdf-options{
+        flex-direction: row;
+    }
+    .pdf-options > *{
+        margin: 0 10px;
+    }
+    .contact-content header{
+        margin: 0;
+        width: 85vw;
+    }
+    .message-body h1{
+        font-size:5vw !important;
+    }
+    .message-body a{
+        font-size: 5vw;    
+    }
+}
+
+@media screen and (max-width:350px){
+    
+    .card{
+        width: 18rem !important;
+    }
+    .continue{
+        right: 54%;
+    }
+    .message-body h1{
+        font-size:6vw !important;
+    }
+    .message-body a{
+        font-size: 6vw;    
+    }
+}
